@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Video Training - Giants Personal Training{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Video Training</h1>
+    <p>Premium workout content delivered to your home</p>
+</section>
+
+<section class="video-section">
+    <div class="subscription-intro">
+        <h2>Train Anywhere, Anytime</h2>
+        <p>Get access to our complete library of professionally produced workout videos. From beginner to advanced, we have programs designed for every fitness level.</p>
+    </div>
+
+    <div class="subscription-plans">
+        <div class="plan-card">
+            <h3>Monthly</h3>
+            <div class="price">£29<span>/month</span></div>
+            <ul class="plan-features">
+                <li>Full video library access</li>
+                <li>New workouts weekly</li>
+                <li>Mobile app access</li>
+                <li>Cancel anytime</li>
+            </ul>
+            <button class="btn btn-primary">Subscribe Monthly</button>
+        </div>
+
+        <div class="plan-card featured">
+            <div class="plan-badge">Best Value</div>
+            <h3>Annual</h3>
+            <div class="price">£199<span>/year</span></div>
+            <ul class="plan-features">
+                <li>Full video library access</li>
+                <li>New workouts weekly</li>
+                <li>Mobile app access</li>
+                <li>Exclusive bonus content</li>
+                <li>Save £149 per year</li>
+            </ul>
+            <button class="btn btn-primary">Subscribe Annually</button>
+        </div>
+
+        <div class="plan-card">
+            <h3>Single Workout</h3>
+            <div class="price">£5<span>/video</span></div>
+            <ul class="plan-features">
+                <li>Pay per workout</li>
+                <li>Lifetime access to purchased videos</li>
+                <li>No commitment</li>
+                <li>Try before you subscribe</li>
+            </ul>
+            <button class="btn btn-secondary">Browse Videos</button>
+        </div>
+    </div>
+
+    <div class="video-categories">
+        <h2>What's Included</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <h4>Strength Training</h4>
+                <p>Build muscle and increase power with targeted resistance workouts.</p>
+            </div>
+            <div class="category-item">
+                <h4>HIIT Workouts</h4>
+                <p>High-intensity intervals to maximize calorie burn and improve cardio.</p>
+            </div>
+            <div class="category-item">
+                <h4>Yoga & Stretching</h4>
+                <p>Improve flexibility and promote recovery with guided sessions.</p>
+            </div>
+            <div class="category-item">
+                <h4>Core & Abs</h4>
+                <p>Targeted core workouts to build a strong, stable foundation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
