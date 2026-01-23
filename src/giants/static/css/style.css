@@ -269,6 +269,13 @@ body {
 
 .recipe-image {
     height: 180px;
+    overflow: hidden;
+}
+
+.recipe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .recipe-content {
