@@ -554,6 +554,30 @@ body {
     text-decoration: underline;
 }
 
+/* Gallery Section */
+.gallery-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-grid-large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-grid-large .gallery-item {
+    aspect-ratio: 4/3;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.gallery-grid-large .gallery-item:hover {
+    transform: scale(1.02);
+}
+
 /* Footer */
 .footer {
     background-color: var(--bg-light);

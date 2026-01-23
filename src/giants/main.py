@@ -35,6 +35,12 @@ async def booking(request: Request) -> HTMLResponse:
     return templates.TemplateResponse(request, "booking.html")
 
 
+@app.get("/gallery", response_class=HTMLResponse, name="gallery")
+async def gallery(request: Request) -> HTMLResponse:
+    """Gallery page."""
+    return templates.TemplateResponse(request, "gallery.html")
+
+
 @app.get("/recipes", response_class=HTMLResponse, name="recipes")
 async def recipes(request: Request) -> HTMLResponse:
     """Recipes page."""
