@@ -578,6 +578,65 @@ body {
     transform: scale(1.02);
 }
 
+/* Trainers Section */
+.trainers-section {
+    padding: 4rem 2rem;
+    background-color: var(--bg-light);
+}
+
+.trainers-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trainer-card {
+    background: var(--bg-color);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.trainer-card:hover {
+    transform: translateY(-4px);
+}
+
+.trainer-image {
+    aspect-ratio: 1;
+    width: 100%;
+}
+
+.trainer-bio {
+    padding: 1.5rem;
+}
+
+.trainer-bio h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.trainer-bio p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .trainers-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}
+
 /* Footer */
 .footer {
     background-color: var(--bg-light);
