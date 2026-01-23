@@ -299,6 +299,82 @@ body {
     font-weight: 500;
 }
 
+/* Merchandise Section */
+.merchandise-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.merchandise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.merchandise-card {
+    background: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.merchandise-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.merchandise-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.merchandise-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.merchandise-content {
+    padding: 1.5rem;
+}
+
+.merchandise-content h3 {
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.merchandise-content p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.merchandise-price {
+    color: var(--accent-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.merchandise-cta {
+    text-align: center;
+    padding: 3rem;
+    background: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.merchandise-cta h2 {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.merchandise-cta p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
 /* Video Section */
 .video-section {
     padding: 4rem 2rem;

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Merchandise - Giants Personal Training{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Merchandise</h1>
+    <p>Rep Giants PT with our official gear</p>
+</section>
+
+<section class="merchandise-section">
+    <div class="merchandise-grid">
+        <div class="merchandise-card">
+            <div class="merchandise-image placeholder">
+                <span>Product Photo</span>
+            </div>
+            <div class="merchandise-content">
+                <h3>Giants PT T-Shirt</h3>
+                <p>Premium cotton training tee with Giants PT logo</p>
+                <span class="merchandise-price">£25.00</span>
+            </div>
+        </div>
+
+        <div class="merchandise-card">
+            <div class="merchandise-image placeholder">
+                <span>Product Photo</span>
+            </div>
+            <div class="merchandise-content">
+                <h3>Giants PT Hoodie</h3>
+                <p>Comfortable pullover hoodie for warm-ups and cool-downs</p>
+                <span class="merchandise-price">£45.00</span>
+            </div>
+        </div>
+
+        <div class="merchandise-card">
+            <div class="merchandise-image placeholder">
+                <span>Product Photo</span>
+            </div>
+            <div class="merchandise-content">
+                <h3>Training Shorts</h3>
+                <p>Lightweight performance shorts with Giants PT branding</p>
+                <span class="merchandise-price">£30.00</span>
+            </div>
+        </div>
+
+        <div class="merchandise-card">
+            <div class="merchandise-image placeholder">
+                <span>Product Photo</span>
+            </div>
+            <div class="merchandise-content">
+                <h3>Gym Bag</h3>
+                <p>Durable gym bag with multiple compartments</p>
+                <span class="merchandise-price">£35.00</span>
+            </div>
+        </div>
+
+        <div class="merchandise-card">
+            <div class="merchandise-image placeholder">
+                <span>Product Photo</span>
+            </div>
+            <div class="merchandise-content">
+                <h3>Water Bottle</h3>
+                <p>750ml insulated stainless steel bottle</p>
+                <span class="merchandise-price">£18.00</span>
+            </div>
+        </div>
+
+        <div class="merchandise-card">
+            <div class="merchandise-image placeholder">
+                <span>Product Photo</span>
+            </div>
+            <div class="merchandise-content">
+                <h3>Resistance Bands Set</h3>
+                <p>Set of 3 resistance bands for home workouts</p>
+                <span class="merchandise-price">£22.00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="merchandise-cta">
+        <h2>Want to Order?</h2>
+        <p>Contact us to place your order or ask about sizes and availability.</p>
+        <a href="{{ url_for('booking') }}" class="btn btn-primary">Contact Us</a>
+    </div>
+</section>
+{% endblock %}

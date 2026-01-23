@@ -59,6 +59,12 @@ async def wellness(request: Request) -> HTMLResponse:
     return templates.TemplateResponse(request, "wellness.html")
 
 
+@app.get("/merchandise", response_class=HTMLResponse, name="merchandise")
+async def merchandise(request: Request) -> HTMLResponse:
+    """Merchandise page."""
+    return templates.TemplateResponse(request, "merchandise.html")
+
+
 @app.get("/health")
 async def health() -> dict[str, str]:
     """Health check endpoint."""
