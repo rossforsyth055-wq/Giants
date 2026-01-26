@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: giants-pt
+    runtime: docker
+    region: frankfurt  # Closest to Fly.io's lhr (London)
+    plan: starter  # 1GB RAM, similar to Fly.io config
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PORT
+        value: 8080
+    healthCheckPath: /
