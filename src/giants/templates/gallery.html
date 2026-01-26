@@ -9,16 +9,57 @@
 </section>
 
 <section class="gallery-section">
-    <div class="gallery-grid-large">
-        <div class="gallery-item">
-            <img src="/static/images/4cfa5200-3c17-4370-8258-2fd6b16f9b6d.jpg" alt="Training photo">
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="/static/images/4cfa5200-3c17-4370-8258-2fd6b16f9b6d.jpg" alt="Training photo">
+            </div>
+            <div class="carousel-slide">
+                <img src="/static/images/beaa5a8f-eb91-4216-b023-e9b90c60d783.jpg" alt="Training photo">
+            </div>
+            <div class="carousel-slide">
+                <img src="/static/images/dfd85a75-6d35-49e2-ab7e-ab6803bda461.jpg" alt="Training photo">
+            </div>
         </div>
-        <div class="gallery-item">
-            <img src="/static/images/beaa5a8f-eb91-4216-b023-e9b90c60d783.jpg" alt="Training photo">
-        </div>
-        <div class="gallery-item">
-            <img src="/static/images/dfd85a75-6d35-49e2-ab7e-ab6803bda461.jpg" alt="Training photo">
+        <button class="carousel-btn carousel-btn-prev" aria-label="Previous">&lt;</button>
+        <button class="carousel-btn carousel-btn-next" aria-label="Next">&gt;</button>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Slide 1"></button>
+            <button class="carousel-dot" aria-label="Slide 2"></button>
+            <button class="carousel-dot" aria-label="Slide 3"></button>
         </div>
     </div>
 </section>
+
+<script>
+(function() {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const prevBtn = document.querySelector('.carousel-btn-prev');
+    const nextBtn = document.querySelector('.carousel-btn-next');
+    let current = 0;
+
+    function showSlide(index) {
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        current = index;
+
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === current);
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === current);
+        });
+    }
+
+    prevBtn.addEventListener('click', () => showSlide(current - 1));
+    nextBtn.addEventListener('click', () => showSlide(current + 1));
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => showSlide(i));
+    });
+
+    // Auto-advance every 5 seconds
+    setInterval(() => showSlide(current + 1), 5000);
+})();
+</script>
 {% endblock %}
