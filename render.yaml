@@ -5,7 +5,4 @@ services:
     region: frankfurt  # Closest to Fly.io's lhr (London)
     plan: free  # Free tier - 512MB RAM, spins down after inactivity
     dockerfilePath: ./Dockerfile
-    envVars:
-      - key: PORT
-        value: 8080
     healthCheckPath: /

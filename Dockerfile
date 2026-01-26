@@ -7,6 +7,6 @@ COPY src/ src/
 
 RUN pip install --no-cache-dir .
 
-EXPOSE 8080
+EXPOSE 10000
 
-CMD ["uvicorn", "giants.main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD uvicorn giants.main:app --host 0.0.0.0 --port ${PORT:-10000}
