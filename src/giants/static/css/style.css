@@ -566,6 +566,97 @@ body {
     margin-bottom: 1.5rem;
 }
 
+/* Kids / Teens Section */
+.kids-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kids-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.kids-intro h2 {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.kids-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.kids-card {
+    background: var(--bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kids-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.kids-card-image {
+    height: 200px;
+}
+
+.kids-card-content {
+    padding: 1.5rem;
+}
+
+.kids-card-content h3 {
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.kids-card-content p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.kids-card-details {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.kids-cta {
+    background: var(--bg-light);
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.kids-cta h2 {
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.kids-cta p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.kids-cta .contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.kids-cta .contact-info a:hover {
+    text-decoration: underline;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;

@@ -59,6 +59,12 @@ async def wellness(request: Request) -> HTMLResponse:
     return templates.TemplateResponse(request, "wellness.html")
 
 
+@app.get("/kids", response_class=HTMLResponse, name="kids")
+async def kids(request: Request) -> HTMLResponse:
+    """Kids and teens training page."""
+    return templates.TemplateResponse(request, "kids.html")
+
+
 @app.get("/merchandise", response_class=HTMLResponse, name="merchandise")
 async def merchandise(request: Request) -> HTMLResponse:
     """Merchandise page."""

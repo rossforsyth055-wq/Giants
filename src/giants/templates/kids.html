@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Kids / Teens - Giants Personal Training{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Kids / Teens</h1>
+    <p>Building confidence, strength, and healthy habits for young people</p>
+</section>
+
+<section class="kids-section">
+    <div class="kids-intro">
+        <h2>Fitness for Young People</h2>
+        <p>Our kids and teens programme is designed to make fitness fun while building strength, coordination, and confidence. Sessions are led by experienced coaches in a safe, supportive environment where every young person can thrive at their own pace.</p>
+    </div>
+
+    <div class="kids-grid">
+        <div class="kids-card">
+            <div class="kids-card-image placeholder">
+                <span>Class Photo</span>
+            </div>
+            <div class="kids-card-content">
+                <h3>Fun Fitness</h3>
+                <p>High-energy sessions mixing games, circuits, and teamwork to keep younger members active and engaged. A great introduction to fitness that feels like play.</p>
+                <div class="kids-card-details">
+                    <span>Ages 6 - 12</span>
+                    <span>Price TBC</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="kids-card">
+            <div class="kids-card-image placeholder">
+                <span>Class Photo</span>
+            </div>
+            <div class="kids-card-content">
+                <h3>Junior Strength</h3>
+                <p>Bodyweight and light resistance training focused on proper technique and building a strong foundation. Develops coordination, balance, and functional strength.</p>
+                <div class="kids-card-details">
+                    <span>Ages 10 - 14</span>
+                    <span>Price TBC</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="kids-card">
+            <div class="kids-card-image placeholder">
+                <span>Class Photo</span>
+            </div>
+            <div class="kids-card-content">
+                <h3>Teen Training</h3>
+                <p>Structured training for older teens looking to build fitness, strength, and confidence. Includes circuits, boxing fundamentals, and conditioning work.</p>
+                <div class="kids-card-details">
+                    <span>Ages 14 - 17</span>
+                    <span>Price TBC</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="kids-cta">
+        <h2>Get Your Kids Started</h2>
+        <p>Spaces are limited to keep sessions safe and personal. Get in touch to book a spot or ask any questions.</p>
+        <a href="{{ url_for('booking') }}" class="btn btn-primary">Book a Session</a>
+        <div class="contact-info">
+            <h3>Questions?</h3>
+            <p>Call or text us on <a href="tel:+447540257166">07540 257166</a></p>
+        </div>
+    </div>
+</section>
+{% endblock %}
