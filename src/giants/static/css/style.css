@@ -568,16 +568,13 @@ body {
 
 /* Kids / Teens Section */
 .kids-section {
-    padding: 0;
-    max-width: 1200px;
+    padding: 4rem 2rem;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .kids-intro {
     text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 4rem 2rem 3rem;
 }
 
 .kids-intro h2 {
@@ -585,184 +582,191 @@ body {
     margin-bottom: 1rem;
 }
 
-.kids-programmes {
-    padding: 3rem 2rem 4rem;
+/* Kids Programmes */
+.kids-programmes-section {
+    padding: 4rem 2rem;
+    background-color: var(--bg-light);
 }
 
-.kids-programmes h2 {
+.kids-programmes-section h2 {
     text-align: center;
-    margin-bottom: 2rem;
-    color: var(--primary-dark);
+    margin-bottom: 3rem;
+    color: var(--primary-color);
 }
 
-.kids-grid {
+.kids-programmes-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.kids-card {
+.kids-programme-card {
     background: var(--bg-color);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    display: flex;
-    flex-direction: column;
+    transition: transform 0.2s ease;
 }
 
-.kids-card:hover {
+.kids-programme-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-.kids-card-image {
-    height: 200px;
+.kids-programme-image {
+    height: 220px;
 }
 
-.kids-card-content {
-    padding: 1.5rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+.kids-programme-content {
+    padding: 2rem;
 }
 
-.kids-card-content h3 {
+.kids-programme-content h3 {
     color: var(--primary-color);
     margin-bottom: 0.75rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
-.kids-card-content p {
+.kids-programme-content p {
     color: var(--text-light);
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-    flex: 1;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
 }
 
-.kids-card-details {
+.kids-programme-meta {
     display: flex;
     justify-content: space-between;
     color: var(--accent-color);
     font-weight: 600;
-    font-size: 0.9rem;
-    padding-top: 1rem;
+    font-size: 1rem;
+    padding-top: 1.25rem;
     border-top: 1px solid var(--border-color);
 }
 
-.kids-benefits {
-    background-color: var(--bg-light);
+/* Kids Benefits */
+.kids-benefits-section {
     padding: 4rem 2rem;
 }
 
-.kids-benefits h2 {
+.kids-benefits-section h2 {
     text-align: center;
-    margin-bottom: 2rem;
-    color: var(--primary-color);
+    margin-bottom: 3rem;
+    color: var(--primary-dark);
 }
 
-.benefits-grid {
+.kids-benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.benefit-item {
-    background: var(--bg-color);
-    padding: 1.5rem;
+.kids-benefit-item {
+    background: var(--bg-light);
+    padding: 2rem;
     border-radius: 8px;
     text-align: center;
 }
 
-.benefit-item h4 {
+.kids-benefit-item h4 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
 }
 
-.benefit-item p {
+.kids-benefit-item p {
     color: var(--text-light);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
-.kids-info {
+/* Kids Info */
+.kids-info-section {
     padding: 4rem 2rem;
+    background-color: var(--bg-light);
 }
 
-.kids-info h2 {
+.kids-info-section h2 {
     text-align: center;
-    margin-bottom: 2rem;
-    color: var(--primary-dark);
+    margin-bottom: 3rem;
+    color: var(--primary-color);
 }
 
-.info-grid {
+.kids-info-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.info-item {
-    background: var(--bg-light);
-    padding: 1.5rem;
+.kids-info-item {
+    background: var(--bg-color);
+    padding: 2rem;
     border-radius: 8px;
     border-left: 4px solid var(--primary-color);
 }
 
-.info-item h4 {
+.kids-info-item h4 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
-.info-item p {
+.kids-info-item p {
     color: var(--text-light);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
-.kids-cta {
+/* Kids CTA */
+.kids-cta-section {
+    padding: 4rem 2rem;
+}
+
+.kids-cta-box {
     background: var(--bg-light);
-    padding: 3rem;
+    padding: 4rem 3rem;
     border-radius: 8px;
     text-align: center;
-    margin: 0 2rem 4rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.kids-cta h2 {
+.kids-cta-box h2 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.kids-cta p {
+.kids-cta-box p {
     color: var(--text-light);
-    margin-bottom: 1.5rem;
-}
-
-.kids-cta .btn {
     margin-bottom: 2rem;
 }
 
-.kids-cta .contact-info {
+.kids-cta-box .contact-info {
     margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
 }
 
-.kids-cta .contact-info a {
+.kids-cta-box .contact-info a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-.kids-cta .contact-info a:hover {
+.kids-cta-box .contact-info a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 900px) {
-    .kids-grid {
+@media (max-width: 768px) {
+    .kids-benefits-grid {
         grid-template-columns: 1fr;
-        max-width: 400px;
-        margin: 0 auto;
+    }
+
+    .kids-info-grid {
+        grid-template-columns: 1fr;
     }
 }
 
