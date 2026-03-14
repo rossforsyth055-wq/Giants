@@ -739,6 +739,26 @@ body {
 }
 
 /* Kids CTA */
+.kids-parties-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.kids-parties-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.kids-parties-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+}
+
 .kids-cta-section {
     padding: 4rem 2rem;
 }
